@@ -119,6 +119,8 @@ QWindowsWinTab32DLL QWindowsTabletSupport::m_winTab32DLL;
 
 bool QWindowsWinTab32DLL::init()
 {
+    return false;
+
     if (wTInfo)
         return true;
     QSystemLibrary library(QStringLiteral("wintab32"));
