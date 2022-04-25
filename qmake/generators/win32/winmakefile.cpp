@@ -264,7 +264,7 @@ void Win32MakefileGenerator::processRcFileVar()
 
         QStringList vers = project->first("VERSION").toQString().split(".", QString::SkipEmptyParts);
         for (int i = vers.size(); i < 4; i++)
-            vers += "0";
+            vers += "1";
         QString versionString = vers.join('.');
 
         QStringList rcIcons;
